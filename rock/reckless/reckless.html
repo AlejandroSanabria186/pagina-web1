@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>The pretty Reckless</title>
+	<link href="style1.css" rel="stylesheet" type="text/css" />
+	<title>Reproductor de música </title>
+	<link href="style.css" rel="stylesheet"> <!--load all styles -->
+	<link href="fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->
+	<script defer src="fontawesome/js/all.js"></script> <!--load all styles -->
+
+</head>
+
+<body>
+	
+		<div class="cabecera">
+      <div class="contenedor-imagen3">
+        <a><img src = "images/tpr2.jpg"></a>
+		</div>
+    </div>
+		<div class="cuerpo">
+			<!--inicio columna derecha -->
+			<div class="columna_derecha">
+			
+				<div class="contenedor-imagen3">
+					<img
+						src="images/Ben1.jpg"
+						onmouseover="this.src='images/ben.jpg'"
+						onmouseout="this.src='images/Ben1.jpg'"
+					/>
+				</div>
+				<div class="contenedor-imagen3">
+					<img
+						src="images/jme.jpg"
+						onmouseover="this.src='images/per.jpg'"
+						onmouseout="this.src='images/jme.jpg'"
+					/>
+				</div>
+			<!--fin columna derecha-->
+			</div>
+			<!--inicio columna izquierda-->
+			<div class="columna_izquierda">
+		
+			
+			<div class="contenedor-imagen3">
+			<img
+				src="images/tm.jpg"
+				onmouseover="this.src='images/tm21.jpg'"
+				onmouseout="this.src='images/tm.jpg'"
+			/>
+		</div>
+	
+		
+			<div class="contenedor-imagen3">
+			<img
+				src="images/mark.jpg"
+				onmouseover="this.src='images/mark2.jpg'"
+				onmouseout="this.src='images/mark.jpg'"
+			/>
+		</div>
+		
+	
+				<!--fin columna izquierda-->
+		</div>
+			<div class="columna_central">
+				<h2></h2>
+				<!--codigo reproductor -->
+				<div class="contenedorim">
+					<div class="body1">
+					<div class= "contenedor-imagen3">
+						<a><img src = "images/dtpr.jpg"></a>
+					</div>
+						<audio id="player" ontimeupdate="updateProgress();">
+							<source  id="source">	
+							Audio no soportado	
+						</audio>
+						
+						<div id="controls">
+							<div class="timer" id="timer">
+								&nbsp;
+							</div>
+							<div class="volumen">
+								Vol: 
+								<i class="fas fa-volume-down"></i> 
+								<input type="range" name="volumen" id="volumen" min="0" max="1" step="0.01" value="0.75"> 
+								<i class="fas fa-volume-up"></i>
+							</div>
+							<!--cambiar iconos -->
+							<i class="fas fa-angle-double-left fa-5x" onclick="prevMusic();"></i>
+							<i class="far fa-play-circle  fa-5x" onclick="togglePlay();" id="iconPlay"></i> 
+							<i class="fas fa-angle-double-right fa-5x" onclick="nextMusic();"></i>
+							<br>
+							<span id="currentPlay"></span><br>
+							<progress id="progress" value="0" max="100" ></progress>
+							
+							
+							
+							
+							<h3>Mi música</h3>
+							<div id="playList"></div>
+					
+						
+						
+						
+						</div>
+						
+						<script type="text/javascript" src="script.js"></script>
+					</div>
+					
+					</div>
+					<!--codigo reproductor -->
+    
+        </div>
+        
+				<br>
+					   
+                   </div>
+			   </div>
+			   <!--pie de pagina-->
+              <div class="pie">
+                    Este es el pie .
+               </div>
+            </div>
+        </body>
+
+
+
+ 
+</html>
+
+
+ 
+
